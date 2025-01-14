@@ -18,9 +18,9 @@ match priority.lower():
 
 # Check if the task is time-bound and modify urgency message accordingly
 if time_bound.lower() == "yes":
-    time_message = "requires immediate attention today!"
+    time_message = f"Reminder: '{task}' is a {priority_message} task that requires immediate attention today!"
 else:
-    time_message = "Consider completing it when you have free time."
+    time_message = f"Note: '{task}' is a {priority_message} task. Consider completing it when you have free time."
 
 # Provide a customized reminder
-print(f"Reminder: '{task}' is a {priority_message} task that {time_message}")
+print(time_message)
