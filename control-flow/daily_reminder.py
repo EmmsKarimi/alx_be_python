@@ -17,7 +17,7 @@ match priority:
         priority_message = "unknown priority"  # Handles any unexpected priority input
 
 # Check if the task is time-bound and modify urgency message accordingly
-if time_bound.lower() == "yes":
+if time_bound == "yes":
     time_message = f"Reminder: '{task}' is a {priority_message} task that requires immediate attention today!"
 else:
     time_message = f"Note: '{task}' is a {priority_message} task. Consider completing it when you have free time."
