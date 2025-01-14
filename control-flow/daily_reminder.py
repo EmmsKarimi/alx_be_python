@@ -5,7 +5,7 @@ task = input("Enter your task: ")
 priority = input("Priority (high/medium/low): ")
 time_bound = input("Is it time-bound? (yes/no): ")
 
-# Use Match Case to handle different priority levels
+# Match Case statement to handle different priority levels
 match priority.lower():
     case "high":
         priority_message = "high priority"
@@ -14,9 +14,9 @@ match priority.lower():
     case "low":
         priority_message = "low priority"
     case _:
-        priority_message = "unknown priority"
-        
-# Check if the task is time-bound and add urgency if necessary
+        priority_message = "unknown priority"  # Handles any unexpected priority input
+
+# Check if the task is time-bound and modify urgency message accordingly
 if time_bound.lower() == "yes":
     time_message = "requires immediate attention today!"
 else:
