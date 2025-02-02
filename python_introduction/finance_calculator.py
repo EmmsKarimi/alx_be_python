@@ -1,9 +1,9 @@
 # Prompt the user for financial details
-monthly_income = float(input("Enter your monthly income:"))
-total_monthly_expenses = float(input("Enter your total monthly expenses:"))
+monthly_income = float(input("Enter your monthly income: "))
+monthly_expenses = float(input("Enter your total monthly expenses: "))  # Change variable name to match expected 'monthly_expenses'
 
 # Calculate Monthly Savings
-monthly_savings = monthly_income - total_monthly_expenses
+monthly_savings = monthly_income - monthly_expenses  # Adjusted to match the expected pattern
 
 # Project Annual Savings with 5% interest rate
 annual_savings = monthly_savings * 12
